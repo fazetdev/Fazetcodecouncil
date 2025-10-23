@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fazet Code Council</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Fazet Code Council</div>
+      <p class="tagline">Your AI-powered dev team: ChatGPT, DeepSeek, and Gemini in one place.</p>
+    </header>
+
+    <section class="ai-selector">
+      <div class="selector-title">🎯 Select AI Assistants</div>
+      <div class="ai-buttons">
+        <button class="ai-btn all-btn active" data-ai="all">👥 Ask All Three</button>
+        <button class="ai-btn chatgpt-btn" data-ai="chatgpt">🤖 ChatGPT</button>
+        <button class="ai-btn deepseek-btn" data-ai="deepseek">💡 DeepSeek</button>
+        <button class="ai-btn gemini-btn" data-ai="gemini">🌟 Gemini</button>
+      </div>
+    </section>
+
+    <section class="input-section">
+      <textarea id="userQuery" class="query-input" placeholder="Ask your coding question or paste code here..."></textarea>
+      <div class="action-buttons">
+        <button class="btn btn-primary" id="askButton">🚀 Consult Selected AI</button>
+        <button class="btn btn-secondary" id="clearButton">🗑️ Clear All</button>
+        <button class="btn btn-secondary" id="exampleButton">📚 Load Example</button>
+      </div>
+    </section>
+
+    <section class="responses-grid">
+      <div class="response-card chatgpt-card">
+        <div class="card-header">
+          <div class="ai-avatar">C</div>
+          <div><h3>ChatGPT</h3><small>Architecture & System Design</small></div>
+        </div>
+        <div class="response-content" id="response-chatgpt">
+          <div class="typing-indicator" id="typing-chatgpt">
+            <div class="typing-dots"><span></span><span></span><span></span></div>
+            ChatGPT is analyzing...
+          </div>
+        </div>
+      </div>
+
+      <div class="response-card deepseek-card">
+        <div class="card-header">
+          <div class="ai-avatar">D</div>
+          <div><h3>DeepSeek</h3><small>Coding & Implementation</small></div>
+        </div>
+        <div class="response-content" id="response-deepseek">
+          <div class="typing-indicator" id="typing-deepseek">
+            <div class="typing-dots"><span></span><span></span><span></span></div>
+            DeepSeek is writing...
+          </div>
+        </div>
+      </div>
+
+      <div class="response-card gemini-card">
+        <div class="card-header">
+          <div class="ai-avatar">G</div>
+          <div><h3>Gemini</h3><small>Review & Best Practices</small></div>
+        </div>
+        <div class="response-content" id="response-gemini">
+          <div class="typing-indicator" id="typing-gemini">
+            <div class="typing-dots"><span></span><span></span><span></span></div>
+            Gemini is reviewing...
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Fazet Code Council © 2025 | Multi-AI Coding Assistant
+    </footer>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
